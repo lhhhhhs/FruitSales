@@ -16,4 +16,12 @@ public class FruitService {
     public List<Fruit> getAll() {
         return fruitDao.queryAll();
     }
+
+    public Fruit getOneByFid(int fid1) {
+       return  fruitDao.queryOneByFid(fid1);
+    }
+
+    public void updateSales(int fid1, int newSales) {
+        fruitDao.updateSales(fid1, newSales);
+    }
 }

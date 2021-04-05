@@ -19,7 +19,7 @@ public class OrderItemDaoImpl implements OrderItemDao {
     @Override
     public void addOrderItem(OrderItem orderItem) {
         String sql="insert into order_item_tbl(oid,fid,fcount,price)values(?,?,?,?)";
-        JDBCUtils.update(sql,orderItem.getId(),orderItem.getOid(),orderItem.getFid(),orderItem.getfCount(),orderItem.getPrice());
+        JDBCUtils.update(sql,orderItem.getOid(),orderItem.getFid(),orderItem.getfCount(),orderItem.getPrice());
     }
 
     @Override
