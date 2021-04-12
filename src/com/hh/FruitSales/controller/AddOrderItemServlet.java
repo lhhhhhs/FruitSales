@@ -42,10 +42,7 @@ public class AddOrderItemServlet extends HttpServlet {
         int fid1 = Integer.parseInt(fid);
         BigDecimal count1 = new BigDecimal(count);
         BigDecimal price1 = new BigDecimal(price);
-        System.out.println("fid1 = " + fid1);
-        System.out.println("fname = " + fname);
-        System.out.println("count1 = " + count1);
-        System.out.println("price1 = " + price1);
+
         HttpSession session = request.getSession();
         String oid = (String)session.getAttribute("oid");
         if(null == oid){
